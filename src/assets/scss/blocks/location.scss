@@ -1,0 +1,51 @@
+.location .row {
+  //padding: 6.4rem 0;
+  //margin-bottom: 2rem;
+  //min-height:600px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 600px;
+}
+
+.location__title {
+  font-size: 4.2rem;
+  font-weight: 700;
+  line-height: 5rem;
+  color: $primary;
+}
+
+.location__subtitle {
+  font-size: 2rem;
+  line-height: 1.7;
+  color: $primary;
+  font-weight: 400;
+  margin: 2rem 0 3rem;
+}
+
+.location__link {
+  display: flex;
+  align-items: center;
+
+  width: auto;
+
+  color: $blue;
+  font-size: 1.7rem;
+  font-weight: 600;
+  font-family: inherit;
+  text-decoration: none;
+
+  transition: box-shadow 0.2s linear;
+
+  &:after {
+    margin-left: 10px;
+    content: '\f054';
+    color: $blue;
+    line-height: 100%;
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-family: 'Font Awesome 5 Free', "Font Awesome 5 Brands";
+  }
+}

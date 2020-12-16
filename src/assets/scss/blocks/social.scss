@@ -1,0 +1,35 @@
+
+.social__link {
+  text-decoration: none;
+  color: $primary;
+
+}
+
+.social__item {
+  display: block;
+  width: 3rem;
+
+  transition: opacity .2s linear;
+
+  line-height: 100%;
+  font-size: 3.2rem;
+  font-family: 'Font Awesome 5 Free', "Font Awesome 5 Brands";
+
+  &.vk {
+    margin-right: 2rem;
+
+    &:before {
+      content: '\f189';
+    }
+  }
+
+  &.inst {
+    &:after {
+      content: '\f16d';
+    }
+  }
+
+  &:hover {
+    opacity: 0.50;
+  }
+}

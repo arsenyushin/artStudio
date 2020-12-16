@@ -1,0 +1,50 @@
+.preview {
+  position: relative;
+  left: -100px;
+  pointer-events: none;
+  overflow: visible;
+
+  .img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+}
+
+.main .preview__item {
+  display: block;
+
+  left: -2098px;
+  width: 6294px;
+
+  animation: preview--art 30s linear infinite;
+}
+
+
+.preview__item {
+  max-width: none;
+  position: absolute;
+
+  top: 50%;
+  left: 0;
+  height: 625px;
+
+  background-repeat: repeat-x;
+  background-size: contain;
+
+  pointer-events: auto; // Остановить по нажатию
+
+  transform: translateY(-50%);
+}
+
+@keyframes preview--art {
+  0% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translate(2152px,-50%);
+  }
+}
+
+

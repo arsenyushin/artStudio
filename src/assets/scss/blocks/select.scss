@@ -1,0 +1,95 @@
+// SELECT
+
+.select__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 3rem;
+
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: $primary;
+
+  .img {
+    margin-right: 2rem;
+  }
+}
+
+.select__group {
+  display: flex;
+  width: 100%;
+  height: 22rem;
+  justify-content: center;
+  align-items: center;
+
+  color: $white;
+  text-decoration: none;
+
+  background: $group_13;
+  border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
+
+  transition: 0.3s;
+
+  &.group-13 {
+    background: $group-13;
+  }
+
+  &.group-10 {
+    background: $group-10;
+  }
+
+  &.group-7 {
+    background: $group-7;
+  }
+
+  &.group-4 {
+    background: $group-4;
+  }
+  
+  &:hover {
+    border-radius: 1.5rem 1.5rem 50% 1.5rem;
+    //box-shadow: inset 0 0 10px rgba($white,.3rem);
+  }
+}
+
+.select__item {
+  display: block;
+  width: 100%;
+
+  text-align: center;
+}
+
+.group__title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 0.75;
+}
+
+.group__subtitle {
+  margin: 2rem 0;
+
+  font-size: 1.8rem;
+  line-height: 2rem;
+  font-weight: 400;
+}
+
+.group__btn {
+  padding: 1.6rem 4.8rem;
+
+  color: $white;
+  font-size: 1.7rem;
+  font-weight: 600;
+  font-family: inherit;
+  line-height: 0.75;
+
+  border-radius: 2.2em;
+  border: 0;
+  background: rgba($white, 0.15);
+
+  transition: background .2s linear;
+
+  &:hover {
+    background: rgba($white, 0.25);
+  }
+}

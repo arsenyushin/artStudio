@@ -1,0 +1,80 @@
+.nav__list {
+  display: flex;
+}
+
+.nav__item {
+  position: relative;
+  margin-right: 3rem;
+
+  &:hover {
+    .nav__link {
+      color: rgba($primary,.5);
+      transition: color .15s ease-in;
+    }
+    >.subnav {
+      display: block;
+    }
+  }
+
+  .top-wrap:before {
+    position: absolute;
+    pointer-events: none;
+    border: solid transparent;
+    content: "";
+
+    height: 0;
+    width: 0;
+    bottom: 100%;
+    left: 50%;
+  }
+  .top-wrap:before {
+    border-width: 8px;
+    margin: 0 -6px;
+    border-bottom-color: #fff;
+  }
+}
+
+.nav__link {
+  display: block;
+  padding: $header-height 0;
+
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: $primary;
+  text-decoration: none;
+
+  transition: background-color .2s linear;
+
+  &.has-subnav {
+    position: relative;
+    padding-right: 3.5rem;
+    &:after {
+      content: fa-content($fa-var-angle-down);
+      display: block;
+
+      position: absolute;
+      top: 50%;
+      right: 1.35rem;
+      transform: translateY(-50%);
+      text-align: center;
+
+      font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
+      font-size: 1.6rem;
+      font-weight: 600;
+    }
+  }
+
+  &.logo {
+    line-height: 0.75;
+    font-weight: 800 !important;
+
+    .logo__top {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    .logo__bottom {
+      font-size: 2rem !important;
+    }
+  }
+}

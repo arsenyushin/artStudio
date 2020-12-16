@@ -1,0 +1,71 @@
+.intro {
+  //padding: 6.4rem 0;
+  //margin-bottom: 2rem;
+  //min-height:600px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+  min-height: 600px;
+}
+
+.intro__badge {
+  display: flex;
+
+  align-items: center;
+
+  color: $primary;
+  font-size: 2.4rem;
+  font-weight: 700;
+
+  &:before {
+    content: '\f3c5';
+
+    margin-right: 10px;
+    margin-bottom: 2px;
+
+    color: #000;
+    line-height: 100%;
+    font-size: 2rem;
+    font-family: 'Font Awesome 5 Free', "Font Awesome 5 Brands";
+  }
+}
+
+.intro__title {
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 5rem;
+  color: $primary;
+}
+
+.intro__subtitle {
+  font-size: 2.4rem;
+  line-height: 4.08rem;
+  color: $primary;
+  font-weight: 400;
+  margin: 2rem 0 3rem;
+}
+
+.intro__btn {
+  padding: 1.8rem 4.8rem;
+
+  color: $white;
+  font-size: 1.7rem;
+  font-weight: 600;
+  font-family: inherit;
+  line-height: 0.75;
+
+  border-radius: 2.2em;
+  border: 0;
+  background: $primary;
+
+  box-shadow: 0 13px 20px rgba($primary, .35);
+
+  transition: box-shadow 0.2s linear;
+
+  &:hover {
+    box-shadow: 0 0 20px rgba($primary, .10);
+  }
+}

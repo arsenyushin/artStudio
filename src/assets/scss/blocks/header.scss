@@ -1,0 +1,44 @@
+.header {
+  display: flex;
+  width: 100%;
+
+  position: absolute;
+  //position: fixed;
+  //z-index: $z-index-header;
+}
+
+.header__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  color: $primary;
+}
+
+.header__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  //&:before {
+  //  content: '\f189';
+  //  margin-right: 2rem;
+  //
+  //  color: $primary;
+  //  line-height: 100%;
+  //  font-size: 3.2rem;
+  //  font-weight: 400;
+  //  font-family: 'Font Awesome 5 Free', "Font Awesome 5 Brands";
+  //}
+  //&:after {
+  //  content: '\f16d';
+  //  color: $primary;
+  //  line-height: 100%;
+  //  font-size: 3.2rem;
+  //  font-weight: 400;
+  //  font-family: 'Font Awesome 5 Free', "Font Awesome 5 Brands";
+  //  &:hover {
+  //    opacity: .5;
+  //  }
+  //}
+}
