@@ -49,7 +49,7 @@
     position: relative;
     padding-right: 3.5rem;
     &:after {
-      content: fa-content($fa-var-angle-down);
+      //content: fa-content($fa-var-angle-down);
       display: block;
 
       position: absolute;
@@ -65,8 +65,14 @@
   }
 
   &.logo {
+    display: flex;
+    align-items: center;
     line-height: 0.75;
     font-weight: 800 !important;
+
+    i {
+      margin-right: 2rem;
+    }
 
     .logo__top {
       display: block;

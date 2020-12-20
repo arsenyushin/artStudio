@@ -1,44 +1,45 @@
 .preview {
   position: relative;
-  left: -100px;
   pointer-events: none;
-  overflow: visible;
+  left: -100px;
 
-  .img {
+  .work {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
   }
-
 }
 
-.main .preview__item {
-  display: block;
-
-  left: -2098px;
-  width: 6294px;
-
-  animation: preview--art 30s linear infinite;
+.work {
+  pointer-events: none;
 }
-
 
 .preview__item {
-  max-width: none;
-  position: absolute;
-
-  top: 50%;
-  left: 0;
-  height: 625px;
-
   background-repeat: repeat-x;
   background-size: contain;
 
+  max-width: none;
+  height: 625px;
   pointer-events: auto; // Остановить по нажатию
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+
 
   transform: translateY(-50%);
 }
 
-@keyframes preview--art {
+.main .preview__item {
+  left: -2098px;
+  width: 6294px;
+
+  background-image: url(../../../assets/images/img+.png);
+
+  animation: --art 30s linear infinite;
+}
+
+@keyframes --art {
   0% {
     transform: translateY(-50%);
   }

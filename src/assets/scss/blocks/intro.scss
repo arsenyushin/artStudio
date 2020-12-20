@@ -63,9 +63,10 @@
 
   box-shadow: 0 13px 20px rgba($primary, .35);
 
-  transition: box-shadow 0.2s linear;
+  //transition: box-shadow 0.2s linear;
 
   &:hover {
-    box-shadow: 0 0 20px rgba($primary, .10);
+    background: lighten($primary, 8%);
+    //box-shadow: 0 0 20px rgba($primary, .10);
   }
 }
