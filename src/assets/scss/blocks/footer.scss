@@ -1,5 +1,5 @@
 .footer {
-  padding: 120px 0;
+  padding-top: 12rem;
 
   position: relative;
   overflow: hidden;
@@ -21,6 +21,7 @@
     }
   }
 }
+
 
 .footer__user  {
   margin-top: 2rem;
@@ -105,7 +106,6 @@
     color: $primary;
     text-decoration: none;
   }
-
   &:last-child {
     margin-bottom: 0;
   }
@@ -121,20 +121,39 @@
   font-weight: 800;
 }
 
-.item {
+.footer__social {
   display: flex;
   align-items: center;
 
   font-family: "Font Awesome 5 Free Regular", "Font Awesome 5 Brands";
   font-size: 3.1rem;
 
-  .link.vk:before {
-    content: "\f189";
-    font-weight: 600;
-    margin-right: 1.5rem;
+  .footer__link {
+    &.vk:before {
+      content: "\f189";
+      font-weight: 600;
+      margin-right: 1.5rem;
+    }
   }
-  .link.inst:before {
-    content: "\f16d";
+  .footer__link {
+    &.inst:before {
+      content: "\f16d";
+      font-weight: 500;
+    }
+  }
+}
+
+.footer__sub {
+  margin-top: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  p {
+    font-size: 1.6rem;
     font-weight: 500;
+    color: rgba($primary, .5);
   }
 }

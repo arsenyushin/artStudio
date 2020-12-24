@@ -14,6 +14,7 @@
   .img {
     margin-right: 2rem;
   }
+
 }
 
 .select__group {
@@ -91,5 +92,14 @@
 
   &:hover {
     background: rgba($white, 0.25);
+  }
+}
+
+@keyframes ani {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
   }
 }
